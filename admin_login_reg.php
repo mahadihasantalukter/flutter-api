@@ -31,7 +31,7 @@ if($action == "register"){
 // login page
 else if ($action == 'login') {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $phone = $_POST['phone_number'];
 
     $result = $conn->query("SELECT * FROM shop_admin WHERE email='$email'");
     if ($result->num_rows > 0) {
