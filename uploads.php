@@ -45,7 +45,7 @@ else if($method == 'GET'){
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             // আপনার সার্ভারের বর্তমান URL এবং ফোল্ডার পাথ এখানে দিন
-            $row['image_url'] = "http://192.168.1.105/flutter/api/upload/" . $row['image'];
+            $row['image_url'] = "http://192.168.1.110/flutter/api/upload/" . $row['image'];
             $products[] = $row;
         }
         echo json_encode($products);
